@@ -46,7 +46,16 @@ async function pull(name, repo) {
 }
 
 async function run(name) {
+ //run commands needed to get project up and running
 
+ //for web based projects, maybe expose a .local domain
+ //with trafik
+ //for now just have it run
+ const type = "compose";
+
+ switch(type) {
+     
+ }
 }
 
 module.exports = {
