@@ -35,7 +35,9 @@ async function pull(name, repo) {
 
     switch(type) {
         case 'url':
-            const repository = await git.Clone(repo, config.path+`/${name}/`);
+            const repository = await git.Clone(repo, config.path+`/${name}/code/`);
+        break;
+        case 'name':
         break;
         default:
             break;
@@ -43,7 +45,12 @@ async function pull(name, repo) {
     console.log('pull repo', repo);
 }
 
+async function run(name) {
+
+}
+
 module.exports = {
     init,
-    pull
+    pull,
+    run
 };
