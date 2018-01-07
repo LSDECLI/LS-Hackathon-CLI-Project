@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "description": "CLI for lambdaschool",
   "main": "index.js",
+  "bin" : {
+    "lambdaschool" : "./cli.js"
+  },
   "repository": "https://github.com/vibe/LambdaSchool-CLI",
   "author": "Christian Franco <christian.franco94@icloud.com>",
+  "dependencies": {
+    "commander": "^2.12.2",
+    "inquirer": "^4.0.2"
+  }
 }
