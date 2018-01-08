@@ -1,19 +1,17 @@
 {
-  "name": "ls-hackathon-cli-project",
+  "name": "LambdaSchool-CLI",
   "version": "1.0.0",
-  "description": "Lambda School CLI",
+  "description": "CLI for lambdaschool",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bin": {
+    "lambdaschool": "./cli.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LSDECLI/LS-Hackathon-CLI-Project.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/LSDECLI/LS-Hackathon-CLI-Project/issues"
-  },
-  "homepage": "https://github.com/LSDECLI/LS-Hackathon-CLI-Project#readme"
+  "repository": "https://github.com/vibe/LambdaSchool-CLI",
+  "author": "Christian Franco <christian.franco94@icloud.com>",
+  "dependencies": {
+    "commander": "^2.12.2",
+    "fs-extra": "^5.0.0",
+    "inquirer": "^4.0.2",
+    "nodegit": "^0.20.3"
+  }
 }
